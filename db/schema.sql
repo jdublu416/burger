@@ -14,3 +14,4 @@ create table burgers (
     devoured boolean default false,
     primary key (id)
 );
+
