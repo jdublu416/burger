@@ -1,0 +1,77 @@
+ {{!-- Setup the `index.handlebars` to have the template that Handlebars can render onto. * Create a button in `index.handlebars`
+that will submit the user input into the database. --}} {{!--
+<h1 id="burgerTitle">Eat-Da-Burger!</h1>
+
+
+<ul id="burgersNew">
+    {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
+</ul>
+
+
+
+<ul id="burgersEaten">
+    {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
+</ul>
+
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="burgerAdd">Burger Name:</label>
+        <input type="text" id="burgerAdd" name="name">
+    </div>
+
+
+    <button type="submit" id="btnSubmit">Add Burger</button>
+</form>
+
+<h2>Add a Burger you want to eat and click the submit button!</h2> --}}
+
+<div id="content">
+
+    <header>
+        <img src="/assets/images/burger.jpg" alt="burger pic goes here" width="225" height="250">
+        <h1 id="burgerTitle">Eat-Da-Burger!</h1>
+    </header>
+
+    <aside>
+
+        <ul id="burgersNew">
+
+            {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
+            
+
+        </ul>
+
+
+    </aside>
+
+    <main>
+
+        <ul id="burgersEaten">
+            
+                    {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured = false}} {{/if}} {{/each}}
+              
+        
+
+
+        </ul>
+
+    </main>
+
+    <section>
+
+        <form class="create-form">
+
+            <div class="form-group">
+                <label id="lblAdd" for="burgerAdd">Burger Name:</label>
+                <input type="text" id="burgerAdd" name="name">
+            </div>
+
+            <h2>Add a Burger you want to eat and click the submit button!</h2>
+
+            <button type="submit" id="btnSubmit">Add Burger</button>
+        </form>
+
+
+    </section>
+</div>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Document</title>
+    <link rel="stylesheet" href="css/burger_style.css">
+</head>
+
+<body>
+    <div id="content">
+
+        <header>
+            <img src="images/burger.jpg" alt="burger pic goes here" width=225px height=250px>
+            <h1 id="burgerTitle">Eat-Da-Burger!</h1>
+        </header>
+
+        <aside>
+
+            <ul id="burgersNew">
+                <div class="lstBurger">
+                    <li class="burgerListItem">cheeseburger deluxe</li>
+
+                    <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+                        Devour it!
+                    </button>
+
+                </div>
+                <div class="lstBurger">
+                    <li class="burgerListItem"> bacon cheeseburger deluxe</li>
+
+                    <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+                        Devour it!
+                    </button>
+
+                </div>
+
+            </ul>
+
+
+        </aside>
+
+        <main>
+
+            <ul id="burgersEaten">
+                <!-- <p>
+                    {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
+                </p> -->
+                <li class="eatenListItem">cheeseburger</li>
+
+                <li class="eatenListItem"> veggie burger</li>
+
+
+            </ul>
+
+        </main>
+
+        <section>
+
+            <form class="create-form">
+
+                <div class="form-group">
+                    <label id="lblAdd" for="burgerAdd">Burger Name:</label>
+                    <input type="text" id="burgerAdd" name="name">
+                </div>
+
+                <h2>Add a Burger you want to eat and click the submit button!</h2>
+
+                <button type="submit" id="btnSubmit">Add Burger</button>
+            </form>
+
+
+        </section>
+    </div>
+</body>
+
+</html>
