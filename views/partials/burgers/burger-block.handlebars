@@ -3,9 +3,24 @@
     <li class="burgerListItem">
         {{burger_name}}</li>
 
-    <button class="change-devoured" data-id="{{id}}" data-newDevoured="{{devoured}}">
-        {{#if devoured}}Devour it!{{/if}}
+    <button class="change-devoured" id ={{id}} action=data-id="{{id}}" data-newDevoured="{{devoured}}">
+        {{#if devoured}}Devour it!{{else}} {{/if}}
     </button>
 
 
 </div>
+
+{{!-- <div class="lstItem">
+
+    <li class="burgerListItem">
+        {{burger_name}}</li>
+    <form action="burgers/update/{{this.id}}?_method=PUT"method="POST">
+        <input type="hidden" name="devoured" value="true" >
+        <button class="change-devoured" value={{this.id}} type="submit">
+            {{#if devoured}}Devour it!{{/if}}
+        </button>
+
+    </form>
+
+
+</div> --}}
